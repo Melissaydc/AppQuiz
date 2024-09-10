@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz - Questão Biologia: Qual destes animais pertence à classe dos mamíferos?" />
+
+        <RadioGroup
+            android:id="@+id/radioBio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Crocodilo" />
+
+            <RadioButton
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Tubarão" />
+
+            <RadioButton
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Pinguim" />
+
+            <RadioButton
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Baleia" />
+
+            <RadioButton
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Serpente" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz - Questão Matemática: Qual é a raiz quadrada de 144?" />
+
+        <RadioGroup
+            android:id="@+id/radioMat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="13" />
+
+            <RadioButton
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="10" />
+
+            <RadioButton
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="11" />
+
+            <RadioButton
+                android:id="@+id/button8"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="12" />
+
+            <RadioButton
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="14" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz - Questão História: Qual evento marcou o início da Independência do Brasil?" />
+
+        <RadioGroup
+            android:id="@+id/radioHis"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="A Inconfidência Mineira" />
+
+            <RadioButton
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="A Batalha de Tuiutin" />
+
+            <RadioButton
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="O Grito do Ipiranga" />
+
+            <RadioButton
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="A Guerra do Paraguai" />
+
+            <RadioButton
+                android:id="@+id/button15"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="A Revolução de 1930" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonLimpar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Limpar" />
+
+            <Button
+                android:id="@+id/buttonCorrigir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Corrigir" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
